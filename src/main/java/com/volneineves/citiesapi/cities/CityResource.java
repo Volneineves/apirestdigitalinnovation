@@ -1,6 +1,7 @@
 package com.volneineves.citiesapi.cities;
 
 import com.volneineves.citiesapi.cities.repository.CityRepository;
+import com.volneineves.citiesapi.states.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +20,9 @@ public class CityResource {
     private CityRepository repository;
 
     @GetMapping
-    public List<City> findAll(){
-        return repository.findAll();
+    public ResponseEntity<List<City>> findAll(){
+        List<City> list = repository.findAll();
+        return ResponseEntity.ok().body(list);
     }
 
     @GetMapping(value = "/{id}")

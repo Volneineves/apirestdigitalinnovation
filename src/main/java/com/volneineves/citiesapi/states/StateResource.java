@@ -19,8 +19,9 @@ public class StateResource {
     private StateRepository repository;
 
     @GetMapping
-    public List<State> findAll(){
-        return repository.findAll();
+    public ResponseEntity<List<State>> findAll(){
+        List<State> list = repository.findAll();
+        return ResponseEntity.ok().body(list);
     }
 
     @GetMapping(value = "/{id}")

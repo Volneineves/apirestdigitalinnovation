@@ -1,6 +1,7 @@
 package com.volneineves.citiesapi.countries;
 
 import com.volneineves.citiesapi.countries.repository.CountryRepository;
+import com.volneineves.citiesapi.states.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,8 +18,9 @@ public class CountryResource {
 
 
     @GetMapping
-    public List<Country> findAll(){
-        return repository.findAll();
+    public ResponseEntity<List<Country>> findAll(){
+        List<Country> list = repository.findAll();
+        return ResponseEntity.ok().body(list);
     }
 
     @GetMapping(value = "/{id}")
