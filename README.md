@@ -1,6 +1,7 @@
 # Construindo uma API Rest de consulta de cidades do Brasil do zero até a produção
 
 ## Deploy Heroku
+* <a href="https://springbootdigitalinnovation.herokuapp.com/swagger-ui.html#/" target="_blank">Swagger</a>
 * <a href="https://springbootdigitalinnovation.herokuapp.com/countries" target="_blank">Countries</a>
 * <a href="https://springbootdigitalinnovation.herokuapp.com/states" target="_blank">States</a>
 * <a href="https://springbootdigitalinnovation.herokuapp.com/cities" target="_blank">Cities</a>
