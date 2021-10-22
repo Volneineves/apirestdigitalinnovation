@@ -11,9 +11,8 @@
 
 ## Requirements
 
-* Linux
 * Git
-* Java 11
+* Java 17
 * Docker
 * IntelliJ Community
 * Heroku CLI
@@ -72,7 +71,7 @@ select earth_distance(
 
 * [https://start.spring.io/](https://start.spring.io/)
 
-+ Java 11
++ Java 17
 + Maven Project
 + Jar
 + Spring Web
